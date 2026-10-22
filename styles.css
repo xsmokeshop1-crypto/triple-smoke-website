@@ -56,3 +56,10 @@ html{scroll-behavior:smooth}
 .feature-grid .ph,.photo,.map{box-shadow:0 14px 30px rgba(0,0,0,.08)}
 .site-footer{background:#f0efed;color:#171719}
 @media(prefers-reduced-motion:reduce){.plate img,.coll,.prod,.btn{transition:none!important}}
+
+
+/* Logo clarity polish */
+.brand img,.foot img{background:transparent!important;border:0!important;padding:0!important;mix-blend-mode:normal!important;filter:none!important;object-fit:contain}
+.plate img{mix-blend-mode:normal!important;filter:drop-shadow(0 14px 12px rgba(0,0,0,.12));transform:none!important}
+.plate img:hover{transform:translateY(-3px)!important}
+.site-header{box-shadow:0 5px 22px rgba(0,0,0,.04)}
