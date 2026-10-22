@@ -8,3 +8,59 @@
 .age-notice[hidden]{display:none}.age-notice{position:fixed;inset:0;background:rgba(0,0,0,.84);z-index:20;display:grid;place-items:center;padding:20px}.age-card{max-width:480px;width:100%;padding:35px;background:#171915;border:1px solid #3c4231;text-align:center;box-shadow:0 25px 100px #000}.age-mark{margin:0 auto 18px}.age-card h2{font-size:2.6rem}.age-card>p:not(.eyebrow){color:var(--muted)}.age-card .button{width:100%;margin-top:10px}.age-leave{background:none;border:0;color:#c5c9bd;text-decoration:underline;padding:14px;cursor:pointer}.age-card small{display:block;color:#82877b;font-size:.65rem;margin-top:15px}
 @media(max-width:800px){.site-header{height:76px;padding:0 20px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:120px;left:0;right:0;z-index:10;background:#171915;border-bottom:1px solid var(--line);padding:22px;flex-direction:column;align-items:stretch;gap:18px}.nav.open{display:flex}.nav-cta{text-align:center}.hero{min-height:590px;padding:65px 25px 40px}.hero-stamp{right:7%;bottom:8%;width:82px;height:82px}.hero-stamp span{font-size:1.5rem}.hero-stamp small{font-size:.4rem}.hero-backdrop{right:-240px;top:20%;width:420px;height:420px}.section{padding:75px 25px}.intro{grid-template-columns:1fr;gap:22px}.intro-note{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}.section-heading{align-items:start;flex-direction:column;gap:15px}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:220px}.visit{grid-template-columns:1fr;gap:30px}.visit-art{min-height:320px}.contact{grid-template-columns:1fr;gap:15px}.contact-links{grid-template-columns:1fr}.footer{padding:28px 25px;grid-template-columns:1fr auto}.footer>p{text-align:left;grid-column:1/-1;grid-row:3}.back-top{grid-column:2;grid-row:1}.legal-note{grid-row:4!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+
+/* Triple Smoke monochrome redesign */
+:root{--bg:#f4f4f2;--panel:#fff;--panel2:#e8e8e6;--text:#171717;--muted:#686868;--accent:#bdbdbd;--line:#d1d1cf;--max:1180px}
+body{background:#f4f4f2;color:#171717}
+.announcement{background:#d9d9d7;color:#111}
+.brand b,.eyebrow,.section-label,.text-link span,.feature-icon,.hero-stamp,.art-cross{color:#777}
+.brand-mark{background:#d8d8d6;color:#111;border:1px solid #bcbcbc}
+.nav a:not(.nav-cta){color:#444}
+.nav a:hover,.text-link:hover,.contact-link:hover{color:#111}
+.nav-cta{border-color:#bcbcbc}
+.menu-toggle{color:#171717;border-color:#c7c7c7}
+.hero{background:radial-gradient(ellipse at 78% 47%,#e5e5e3 0,#d2d2d0 26%,#f4f4f2 68%)}
+.hero:after{background:linear-gradient(90deg,rgba(244,244,242,.98) 0%,rgba(244,244,242,.8) 47%,rgba(244,244,242,.16) 100%)}
+.hero-backdrop{border-color:#bcbcbc;box-shadow:0 0 0 35px rgba(90,90,90,.035),0 0 0 80px rgba(90,90,90,.025)}
+.hero-backdrop:before,.hero-backdrop:after{background:#777;opacity:.08}
+.eyebrow,.section-label{color:#666}
+.eyebrow span{background:#777}
+h1 em,.intro h2 span,.section-heading h2 span,.visit h2 span,.contact h2 span{color:#777}
+.hero-copy{color:#555}
+.button-primary{background:#202020;color:#fff}
+.button-primary:hover{background:#444}
+.button-quiet{border-color:#aaa;color:#222}
+.hero-foot{color:#777}
+.hero-stamp{border-color:rgba(80,80,80,.55);color:#555}
+.section-label{color:#777}
+.intro{border-color:#d1d1cf}
+.intro-note{color:#666}
+.highlights{background:#e9e9e7}
+.feature-card{background:#fff;border-color:#d0d0ce;color:#171717}
+.feature-card-large{background:#d5d5d3;color:#171717}
+.feature-icon{color:#555}
+.feature-card-large .feature-icon{color:#222}
+.feature-card p{color:#666}
+.feature-card-large p{color:#444}
+.visit-details span{color:#777}
+.visit-art{background:radial-gradient(circle,#ededeb,#dcdcd9 62%,#d1d1cf)}
+.orbit{border-color:rgba(70,70,70,.35)}
+.orbit-two{border-color:rgba(70,70,70,.17)}
+.art-center b{color:#555}
+.art-cross{color:#555}
+.contact{background:#dededc;color:#171717}
+.contact .section-label{color:#666}
+.contact h2 span{color:#555}
+.contact-content>p{color:#555}
+.contact-link{border-color:rgba(20,20,20,.3)}
+.contact-link:hover{color:#111;background:rgba(255,255,255,.45)}
+.footer{background:#f4f4f2}
+.footer>p,.back-top{color:#707070}
+.age-notice{background:rgba(15,15,15,.78)}
+.age-card{background:#f4f4f2;border-color:#bdbdbd}
+.age-card h2{color:#171717}
+.age-card>p:not(.eyebrow){color:#555}
+.age-leave{color:#444}
+.age-card small{color:#777}
+@media(max-width:800px){.nav{background:#f4f4f2;border-bottom-color:#d1d1cf}}
