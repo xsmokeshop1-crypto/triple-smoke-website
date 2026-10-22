@@ -7,7 +7,7 @@ async function start(){
  try{const res=await fetch("store-content.json?v=1");if(!res.ok)throw Error("Could not load store-content.json");C=await res.json()}
  catch(e){console.error(e);return}
  document.querySelectorAll("[data-img]").forEach(el=>applyImage(el,el.dataset.img));
- $("#yr").textContent=new Date().getFullYear();$("#legal").textContent=C.legal||"";
+ $("#yr").textContent=new Date().getFullYear();$("#legal").textContent=C.legal||"";if($("#heroHeadline"))$("#heroHeadline").textContent=C.headline||"Elevate your experience.";if($("#heroSubhead"))$("#heroSubhead").textContent=C.subhead||"";
  $("#collGrid").innerHTML=(C.collections||[]).map(c=>'<a class="coll" href="#contact"><h3>'+esc(c.name)+'</h3><span>Explore</span></a>').join("");
  $("#prodGrid").innerHTML=(C.products||[]).map(p=>'<article class="prod"><div class="ph" role="img" aria-label="'+esc(p.name)+'"></div><h3>'+esc(p.name)+(p.verified?"":'<span class="tag">Sample</span>')+'</h3><small>'+esc(p.category)+(p.price?" · "+esc(p.price):"")+'</small><p>'+esc(p.desc)+'</p><a href="#visit">Ask in store</a></article>').join("");
  document.querySelectorAll(".prod .ph").forEach((el,i)=>applyImage(el,(C.products||[])[i].image));
