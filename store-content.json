@@ -1,0 +1,79 @@
+{
+  "headline": "Elevate your experience.",
+  "subhead": "Discover premium glassware, smoking essentials, and carefully selected accessories at Triple X Smoke Shop.",
+  "address": "",
+  "hours": "",
+  "phone": "",
+  "email": "hello@triplesmoke.shop",
+  "social": {
+    "Instagram": "",
+    "Facebook": "",
+    "TikTok": ""
+  },
+  "mapsUrl": "",
+  "ageNotice": {
+    "enabled": true,
+    "minAge": 21,
+    "leaveUrl": "https://www.google.com",
+    "text": "You must be of legal age to view this website. Please confirm your age to continue browsing."
+  },
+  "legal": "Products are intended for adults of legal age only.",
+  "collections": [
+    {
+      "name": "Glass & Water Pipes"
+    },
+    {
+      "name": "Hand Pipes"
+    },
+    {
+      "name": "Hookahs"
+    },
+    {
+      "name": "Grinders"
+    },
+    {
+      "name": "Rolling Accessories"
+    },
+    {
+      "name": "Papers & Wraps"
+    },
+    {
+      "name": "Lighters & Torches"
+    },
+    {
+      "name": "Storage & Accessories"
+    },
+    {
+      "name": "Cleaning Supplies"
+    },
+    {
+      "name": "Other Accessories"
+    }
+  ],
+  "products": [
+    {
+      "name": "Featured glass piece",
+      "category": "Glass & Water Pipes",
+      "desc": "Replace with a real product.",
+      "image": "",
+      "price": "",
+      "verified": false
+    },
+    {
+      "name": "Featured hookah",
+      "category": "Hookahs",
+      "desc": "Replace with a real product.",
+      "image": "",
+      "price": "",
+      "verified": false
+    },
+    {
+      "name": "Featured accessory",
+      "category": "Accessories",
+      "desc": "Replace with a real product.",
+      "image": "",
+      "price": "",
+      "verified": false
+    }
+  ]
+}
