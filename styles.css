@@ -64,3 +64,91 @@ h1 em,.intro h2 span,.section-heading h2 span,.visit h2 span,.contact h2 span{co
 .age-leave{color:#444}
 .age-card small{color:#777}
 @media(max-width:800px){.nav{background:#f4f4f2;border-bottom-color:#d1d1cf}}
+
+
+/* Full-width responsive Triple Smoke Shop refresh */
+:root{--bg:#fff;--panel:#f5f5f5;--panel2:#ededed;--text:#171717;--muted:#666;--accent:#222;--line:#d8d8d8;--max:1440px}
+html{scroll-padding-top:100px}
+body{background:#fff;color:#171717;overflow-x:hidden}
+.announcement{background:#f0f0f0;color:#222;border-bottom:1px solid #ddd;letter-spacing:.14em}
+.site-header{width:100%;max-width:none;height:94px;padding:10px clamp(18px,5vw,76px);border-bottom:1px solid #e5e5e5;background:#fff}
+.brand{gap:14px;min-width:0}
+.brand-logo{display:block;width:150px;height:72px;object-fit:contain;object-position:left center}
+.brand-tagline{font-size:.62rem;letter-spacing:.16em;color:#555;white-space:nowrap}
+.brand b{color:#222}
+.brand-mark{background:#222;color:#fff}
+.nav{gap:clamp(14px,2.5vw,34px);color:#222}
+.nav a:not(.nav-cta){color:#444}
+.nav a:hover,.text-link:hover,.contact-link:hover{color:#888}
+.nav-cta{border-color:#aaa;color:#111}
+.menu-toggle{color:#111;border-color:#bbb}
+.hero{max-width:none;width:100%;min-height:min(760px,calc(100svh - 126px));padding:clamp(44px,7vw,100px) clamp(22px,7vw,110px);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);align-items:center;gap:clamp(20px,5vw,70px);background:linear-gradient(115deg,#fff 0%,#f7f7f7 58%,#e8e8e8 100%);border-bottom:1px solid #ddd}
+.hero:after{display:none}
+.hero-content{position:relative;z-index:1;max-width:760px}
+.hero h1{font-size:clamp(3.2rem,7.3vw,7.5rem);line-height:.96;letter-spacing:-.065em;color:#111}
+.hero h1 em{color:#777}
+.hero-copy{max-width:540px;color:#555;font-size:clamp(1rem,1.35vw,1.2rem)}
+.eyebrow{color:#555;letter-spacing:.16em}
+.eyebrow span{background:#222}
+.button{border-radius:3px}
+.button-primary{background:#171717;color:#fff;border:1px solid #171717}
+.button-primary:hover{background:#444}
+.button-quiet{border-color:#aaa;color:#222}
+.hero-foot{color:#666}
+.hero-logo-wrap{display:grid;place-items:center;min-width:0}
+.hero-logo{display:block;width:min(100%,600px);max-height:590px;object-fit:contain;filter:drop-shadow(0 18px 30px rgba(0,0,0,.10))}
+.hero-stamp{display:none}
+.section{width:100%;max-width:none;padding:clamp(64px,8vw,118px) clamp(22px,8vw,120px)}
+.intro{display:grid;grid-template-columns:.6fr 1.5fr .7fr;gap:clamp(20px,4vw,64px);align-items:start;background:#fff}
+.section-label{color:#666}
+.intro-copy h2,.section-heading h2,.visit-panel h2,.contact-content h2{color:#111;font-size:clamp(2.2rem,4.7vw,4.6rem);line-height:1.02;letter-spacing:-.045em}
+.intro-copy h2 span,.section-heading h2 span,.visit-panel h2 span,.contact-content h2 span{color:#777}
+.intro-copy p,.section-heading>p,.feature-card p,.visit-panel>p,.contact-content>p{color:#5c5c5c}
+.intro-note{border-color:#ddd}
+.note-symbol{color:#333}
+.highlights{background:#f5f5f5;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8}
+.section-heading{gap:32px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.feature-card{min-width:0;background:#fff;border:1px solid #dedede;padding:clamp(22px,3vw,42px);min-height:260px}
+.feature-number{color:#777}
+.feature-icon{color:#333}
+.feature-card h3{color:#161616}
+.visit{background:#fff;grid-template-columns:minmax(0,1fr) minmax(280px,.85fr);gap:clamp(32px,6vw,90px);align-items:center}
+.visit-panel{min-width:0}
+.visit-details>div{border-color:#ddd}
+.visit-details span{color:#777}
+.visit-details strong{color:#222;overflow-wrap:anywhere}
+.visit-art{min-height:360px;display:grid;place-items:center;background:#f3f3f3;border:1px solid #e0e0e0;padding:20px}
+.visit-art img{width:min(100%,470px);height:auto;object-fit:contain}
+.contact{background:#f5f5f5;border-top:1px solid #e3e3e3;display:grid;grid-template-columns:.6fr 1.4fr;gap:clamp(24px,5vw,70px)}
+.contact-link{border-color:#ccc;color:#222}
+.footer{max-width:none;width:100%;padding:30px clamp(22px,5vw,76px);background:#171717;color:#fff;border-top:1px solid #333}
+.footer .brand-logo{width:130px;height:62px}
+.footer .legal-note,.footer p{color:#c5c5c5}
+.footer .back-top{color:#fff}
+.age-notice{background:rgba(0,0,0,.72)}
+.age-card{background:#fff;color:#171717;border:1px solid #ddd}
+.age-card>p:not(.eyebrow),.age-card small{color:#666}
+.age-leave{color:#333}
+.age-logo{width:min(100%,250px);height:auto;object-fit:contain}
+@media(min-width:1600px){.hero{padding-left:max(8vw,calc((100vw - 1500px)/2));padding-right:max(8vw,calc((100vw - 1500px)/2))}}
+@media(max-width:900px){
+ .site-header{height:82px;padding:8px 20px}.brand-logo{width:112px;height:60px}.brand-tagline{font-size:.52rem}
+ .nav{display:none;position:absolute;top:125px;left:0;right:0;z-index:10;background:#fff;border-bottom:1px solid #ddd;padding:22px;flex-direction:column;align-items:stretch;gap:18px;box-shadow:0 12px 22px rgba(0,0,0,.08)}
+ .nav.open{display:flex}.nav-cta{text-align:center}
+ .hero{min-height:auto;grid-template-columns:1fr;gap:10px;padding:65px 25px 35px}
+ .hero-content{max-width:800px}.hero-logo-wrap{grid-row:1;max-height:310px;overflow:hidden}.hero-logo{width:min(72vw,330px);max-height:300px}
+ .hero h1{font-size:clamp(3rem,11vw,5.8rem)}
+ .intro{grid-template-columns:1fr;gap:22px}.intro-note{border-left:0;border-top:1px solid #ddd;padding:20px 0 0}
+ .section-heading{align-items:start;flex-direction:column}.feature-grid{grid-template-columns:1fr}
+ .feature-card{min-height:0}.visit{grid-template-columns:1fr}.visit-art{min-height:250px}.visit-art img{width:min(80%,360px)}
+ .contact{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ .announcement{font-size:.58rem;letter-spacing:.08em}
+ .site-header{padding:8px 14px}.brand-logo{width:94px;height:52px}.brand-tagline{font-size:.46rem;letter-spacing:.08em}
+ .hero{padding:46px 20px 28px}.hero-logo{width:min(78vw,280px)}.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .button{text-align:center}
+ .hero-foot{font-size:.58rem;gap:10px}.section{padding:62px 20px}
+ .intro-copy h2,.section-heading h2,.visit-panel h2,.contact-content h2{font-size:clamp(2.1rem,10vw,3.4rem)}
+ .visit-details strong{font-size:.9rem}.footer{padding:24px 20px;gap:18px}.footer .brand-logo{width:110px}
+}
